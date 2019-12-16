@@ -1,8 +1,8 @@
 <template>
     <div id="drum-container">
         <div class="keys">
-            <div data-key="65" class="key">
-                <kbd>A</kbd>
+            <div data-key="81" class="key">
+                <kbd>Q</kbd>
                 <span class="sound">clap</span>
             </div>
             <div data-key="83" class="key">
@@ -38,7 +38,7 @@
                 <span class="sound">tink</span>
             </div>
         </div>
-        <audio data-key="65" src="../assets/drum/sounds/clap.wav"></audio>
+        <audio data-key="81" src="../assets/drum/sounds/clap.wav"></audio>
         <audio data-key="83" src="../assets/drum/sounds/hihat.wav"></audio>
         <audio data-key="68" src="../assets/drum/sounds/kick.wav"></audio>
         <audio data-key="70" src="../assets/drum/sounds/openhat.wav"></audio>
@@ -59,32 +59,25 @@
                 e.target.classList.remove('playing')
             },
             playSound: function (e) {
-                const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-                const key = document.querySelector(`div[data-key="${e.keyCode}"]`)
-                if (!audio) { return }
-                key.classList.add('playing')
-                audio.currentTime = 0
+                const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+                const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+                if (!audio) {
+                    return
+                }
+                key.classList.add('playing');
+                audio.currentTime = 0;
                 audio.play()
             }
         },
        mounted() {
-            const keys = Array.from(document.querySelectorAll('.key'))
-            keys.forEach(key => key.addEventListener('transitionend', this.removeTransition))
+            const keys = Array.from(document.querySelectorAll('.key'));
+            keys.forEach(key => key.addEventListener('transitionend', this.removeTransition));
             window.addEventListener('keydown', this.playSound)
         }
     }
 </script>
 
 <style scoped>
-    html {
-        font-size: 10px;
-        background-size: cover;
-    }
-    body,html {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-    }
     #drum-container{
         background-image: url("../assets/drum/fond-drum.jpg");
     }

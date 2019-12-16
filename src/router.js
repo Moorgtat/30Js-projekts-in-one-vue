@@ -16,6 +16,11 @@ export const router = new Router({
             path: '/Drum',
             name: 'Drum',
             component: () => import('./components/Drum')
+        },
+        {
+            path: '/Clock',
+            name: 'Clock',
+            component: () => import('./components/Clock')
         }
         ]
 });
