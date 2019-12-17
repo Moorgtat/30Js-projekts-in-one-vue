@@ -78,9 +78,11 @@
 </script>
 
 <style scoped>
+
     #drum-container{
         background-image: url("../assets/drum/fond-drum.jpg");
     }
+
     .keys {
         display: flex;
         flex: 1;
