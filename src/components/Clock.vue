@@ -34,10 +34,10 @@
                 this.secondsDegrees = ((seconds/60)*360) + 90;
 
                 const mins = now.getMinutes();
-                this.minsDegrees = ((mins / 60) * 360) + ((seconds / 60) * 6) + 90
+                this.minsDegrees = ((mins / 60) * 360) + ((seconds / 60) * 6) + 90;
 
                 const hour = now.getHours();
-                this.hourDegrees = ((hour / 12) * 360) + ((mins / 60) * 30) + 90
+                this.hourDegrees = ((hour / 12) * 360) + ((mins / 60) * 30) + 90;
             }
         }
     }
@@ -58,8 +58,8 @@
     font-size: 2rem;
 }
 .clock {
-    width: 30rem;
-    height: 30rem;
+    width: 40rem;
+    height: 40rem;
     border: 20px solid rgba(0,0,0,0.7);
     border-radius: 50%;
     margin: 50px auto;

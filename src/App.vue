@@ -11,7 +11,10 @@
         <a class="perso-a" href="/Drum">Drum</a>
         </div>
         <div class="navitem">
-            <a class="perso-a" href="/Clock">Clock</a>
+          <a class="perso-a" href="/Clock">Clock</a>
+        </div>
+        <div class="navitem">
+          <a class="perso-a" href="/Spacing">Spacy</a>
         </div>
     </div>
     </div>

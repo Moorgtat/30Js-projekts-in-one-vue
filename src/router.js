@@ -21,6 +21,11 @@ export const router = new Router({
             path: '/Clock',
             name: 'Clock',
             component: () => import('./components/Clock')
+        },
+        {
+            path: '/Spacy',
+            name: 'Spacy',
+            component: () => import('./components/Spacy')
         }
         ]
 });
