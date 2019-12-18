@@ -81,6 +81,7 @@
 
     #drum-container{
         background-image: url("../assets/drum/fond-drum.jpg");
+        background-size: cover;
     }
 
     .keys {
