@@ -50,26 +50,16 @@
     background-size: cover;
     min-height: 100vh;
     display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    font-family: 'helvetica neue', serif;
-    text-align: center;
-    font-size: 2rem;
+    align-items: flex-start;
 }
 .clock {
     width: 40rem;
     height: 40rem;
-    border: 20px solid rgba(0,0,0,0.7);
+    border: 20px solid rgba(0,0,0,0.8);
     border-radius: 50%;
     margin: 50px auto;
-    position: relative;
     padding: 2rem;
-    box-shadow:
-            0 0 0 4px rgba(0,0,0,0.3),
-            inset 0 0 0 3px rgba(0,0,0,0.3),
-            inset 0 0 10px rgba(0,0,0,0.6),
-            0 0 10px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 0 4px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0.2);
 }
 .clock-face {
     position: relative;
@@ -80,7 +70,7 @@
 .hand {
     width: 50%;
     height: 6px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4);
     position: absolute;
     top: 50%;
     transform-origin: 100%;

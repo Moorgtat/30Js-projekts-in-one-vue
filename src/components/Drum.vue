@@ -78,20 +78,19 @@
 </script>
 
 <style scoped>
-
     #drum-container{
+        margin: 0;
         background-image: url("../assets/drum/fond-drum.jpg");
         background-size: cover;
     }
-
     .keys {
         display: flex;
         flex: 1;
         min-height: 100vh;
-        align-items: center;
+        padding-top: 200px;
+        align-items: flex-start;
         justify-content: center;
     }
-
     .key {
         border: .4rem solid black;
         border-radius: .5rem;
@@ -105,23 +104,19 @@
         background: rgba(0,0,0,0.4);
         text-shadow: 0 0 .5rem black;
     }
-
     .playing {
         transform: scale(1.1);
         border-color: #ffc600;
         box-shadow: 0 0 1rem #ffc600;
     }
-
     kbd {
         display: block;
         font-size: 4rem;
     }
-
     .sound {
         font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: .1rem;
         color: #ffc600;
     }
-
 </style>

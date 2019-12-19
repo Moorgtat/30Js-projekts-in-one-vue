@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <header>
+
     <div id="navbar">
-      <h1 id="titre-big">30 JS projekts in one Vue</h1>
+        <div id="titre-big">
+        <h1>30 JS projekts in one Vue</h1>
+        </div>
         <div id="navitem-container">
         <div class="navitem">
         <a class="perso-a" href="/">Home</a>
@@ -14,7 +17,7 @@
           <a class="perso-a" href="/Clock">Clock</a>
         </div>
         <div class="navitem">
-          <a class="perso-a" href="/Spacing">Spacy</a>
+          <a class="perso-a" href="/Spacy">Spacy</a>
         </div>
     </div>
     </div>
@@ -33,11 +36,10 @@ export default {
 
 <style>
   body,html {
-      font-size: 10px;
-      background-size: cover;
-      margin: 0;
-      padding: 0;
-      font-family: "Comic Sans MS" , sans-serif;
+    font-size: 10px;
+    font-family: "Comic Sans MS" , sans-serif;
+    padding: 0;
+    margin: 0;
   }
   #navbar{
     text-align: center;
@@ -46,18 +48,20 @@ export default {
     background-color: #ffc600;
   }
   #titre-big{
-      font-family: "AR DARLING", sans-serif;
-      font-size: 20px;
+    font-family: "AR DARLING", sans-serif;
+    font-size: 20px;
   }
   #navitem-container{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   .navitem{
-    border: .4rem solid black;
+    background-color: rgba(0,0,0,0.2);
+    border: .2rem solid black;
     border-radius: .5rem;
-    margin-right: 0.5rem;
+    margin: 0 0 0 0.5rem;
     font-size: 1rem;
     padding: 0.7rem .3rem;
     width: 3rem;
