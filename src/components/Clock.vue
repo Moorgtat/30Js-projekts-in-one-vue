@@ -1,11 +1,13 @@
 <template>
     <div id="clock-container">
-        <div class="clock">
+        <div id="margineur">
+         <div class="clock">
             <div class="clock-face">
                 <div class="hand hour-hand" :style="transformHandStyle(hourDegrees)"></div>
                 <div class="hand min-hand" :style="transformHandStyle(minsDegrees)"></div>
                 <div class="hand second-hand" :style="transformHandStyle(secondsDegrees)"></div>
             </div>
+         </div>
         </div>
     </div>
 </template>
@@ -49,6 +51,9 @@
     background-image: url("../assets/clock/fond-clock.jpg");
     background-size: cover;
     min-height: 100vh;
+}
+#margineur{
+    padding-top: 50px;
     display: flex;
     align-items: flex-start;
 }
