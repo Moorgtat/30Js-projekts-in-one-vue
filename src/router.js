@@ -26,6 +26,11 @@ export const router = new Router({
             path: '/Spacy',
             name: 'Spacy',
             component: () => import('./components/Spacy')
+        },
+        {
+            path: '/ArrayCardio',
+            name: 'ArrayCardio',
+            component: () => import('./components/ArrayCardio')
         }
         ]
 });

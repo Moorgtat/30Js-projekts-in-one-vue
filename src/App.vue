@@ -19,6 +19,9 @@
         <div class="navitem">
           <a class="perso-a" href="/Spacy">Spacy</a>
         </div>
+        <div class="navitem">
+          <a class="perso-a" href="/ArrayCardio">Array</a>
+        </div>
     </div>
     </div>
     </header>

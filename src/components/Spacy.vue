@@ -24,7 +24,7 @@
             return {
                 spacing: 10,
                 blur: 10,
-               base: "#ffc600"
+                base: "#ffc600"
             }
         },
         computed: {
